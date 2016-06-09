@@ -8,15 +8,10 @@ import static org.junit.Assert.*;
 public class NumberToTextConverterTest {
 
     private String example1 = "3";
-    private int example2B = 35;
-    private int example2A = 15;
-    private String example3 = "216";
-    private int example3A = 216;
-    private int example4 = 1918;
-    private String example5 = "37645";
-    private int example5A = 37645;
-    private String example6 = "675915";
-    private String example7 = "8675309";
+    private int example2 = 35;
+    private int example3 = 15;
+    private int example4 = 216;
+    private int example5 = 37645;
     private int example8 = 8675309;
 
     NumberToTextConverter numberToTextConverter;
@@ -52,14 +47,14 @@ public class NumberToTextConverterTest {
     @Test
     public void testSplitsTheInputOnTheComma() {
         int expected = 2;
-        int actual = numberToTextConverter.splitsTheInputOnTheComma(example5A).length;
+        int actual = numberToTextConverter.splitsTheInputOnTheComma(example5).length;
         assertEquals(expected, actual);
     }
 
     @Test
     public void testAddZeroesToTheBeginningOfTheIndex() {
         String expected = "037";
-        String[] newExample = numberToTextConverter.splitsTheInputOnTheComma(example5A);
+        String[] newExample = numberToTextConverter.splitsTheInputOnTheComma(example5);
         String actual = numberToTextConverter.addZeroesToTheBeginningOfTheIndex(newExample)[0];
         assertEquals("If an index of an array has less than three numbers than this will add zeroes to the spaces", expected, actual);
     }
@@ -67,7 +62,7 @@ public class NumberToTextConverterTest {
     @Test
     public void testReplacesTheNumberInThe1sDigitWithText() {
         String expected = "Fifteen";
-        String newInput = numberToTextConverter.addZeroesToTheBeginningOfTheIndex(numberToTextConverter.splitsTheInputOnTheComma(example2A))[0];
+        String newInput = numberToTextConverter.addZeroesToTheBeginningOfTheIndex(numberToTextConverter.splitsTheInputOnTheComma(example3))[0];
         String actual = numberToTextConverter.replacesTheNumberInThe10sDigitWithText(newInput);
         assertEquals("This will check for a 1 in the Tens place and enter a Teens number if a 1 is found", expected, actual);
     }
@@ -75,7 +70,7 @@ public class NumberToTextConverterTest {
     @Test
     public void testReplacesTheNumberInThe10sDigitWithText1() {
         String expected = "Five";
-        String newInput = numberToTextConverter.addZeroesToTheBeginningOfTheIndex(numberToTextConverter.splitsTheInputOnTheComma(example2B))[0];
+        String newInput = numberToTextConverter.addZeroesToTheBeginningOfTheIndex(numberToTextConverter.splitsTheInputOnTheComma(example2))[0];
         String actual = numberToTextConverter.replacesTheNumberInThe1sDigitWithText(newInput);
         assertEquals("This will check for a 1 in the Tens place and enter a Teens number if a 1 is found", expected, actual);
     }
@@ -83,7 +78,7 @@ public class NumberToTextConverterTest {
     @Test
     public void testReplacesTheNumberInThe10sDigitWithText2() {
         String expected = "Forty";
-        String newInput = numberToTextConverter.splitsTheInputOnTheComma(example5A)[1];
+        String newInput = numberToTextConverter.splitsTheInputOnTheComma(example5)[1];
         String actual = numberToTextConverter.replacesTheNumberInThe10sDigitWithText(newInput);
         assertEquals("This will replace the number in the 10s digit with its Text version", expected, actual);
     }
@@ -91,7 +86,7 @@ public class NumberToTextConverterTest {
     @Test
     public void testReplacesTheNumberInThe100sDigitWithText() {
         String expected = "TwoHundred";
-        String[] newInput2 = numberToTextConverter.addZeroesToTheBeginningOfTheIndex(numberToTextConverter.splitsTheInputOnTheComma(example3A));
+        String[] newInput2 = numberToTextConverter.addZeroesToTheBeginningOfTheIndex(numberToTextConverter.splitsTheInputOnTheComma(example4));
         String actual = numberToTextConverter.replacesTheNumberInThe100sDigitWithText(newInput2[0]);
         assertEquals(expected, actual);
     }
