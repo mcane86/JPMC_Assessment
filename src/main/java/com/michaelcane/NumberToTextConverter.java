@@ -6,8 +6,6 @@ import java.util.HashMap;
 
 public class NumberToTextConverter {
 
-    //Started @ 12:30p.m. Jun 9, 2016
-
     private static HashMap<Integer, String> basicNumbers = new HashMap<>();
     private static HashMap<Integer, String> largeNumbers = new HashMap<>();
     private static HashMap<Integer, String> teens = new HashMap<>();

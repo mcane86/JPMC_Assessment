@@ -92,9 +92,16 @@ public class NumberToTextConverterTest {
     }
 
     @Test
-    public void testConvertsTheSalesFigureIntoText() {
+    public void testConvertsTheSalesFigureIntoText1() {
         String expected = "EightMillionSixHundredSeventyFiveThousandThreeHundredNineDollars";
         String actual = numberToTextConverter.convertsTheSalesFigureIntoText(example8);
+        assertEquals("This will turn the numbers of the Sales int into Text", expected, actual);
+    }
+
+    @Test
+    public void testConvertsTheSalesFigureIntoText2() {
+        String expected = "ThirtySevenThousandSixHundredFortyFiveDollars";
+        String actual = numberToTextConverter.convertsTheSalesFigureIntoText(example5);
         assertEquals("This will turn the numbers of the Sales int into Text", expected, actual);
     }
 
