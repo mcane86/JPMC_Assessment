@@ -34,7 +34,7 @@ public class TripleDigitTest {
     public void convertTripleDigit1() throws Exception {
         String expected  = "NineHundredThirteen";
         String example = "913";
-        String actual = tripleDigit.convertTripleDigit(example);
+        String actual = tripleDigit.conversionAction(example);
         assertEquals(expected, actual);
     }
 

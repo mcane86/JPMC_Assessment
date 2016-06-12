@@ -1,6 +1,5 @@
 package com.michaelcane;
 
-import jdk.nashorn.internal.runtime.ECMAException;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -35,7 +34,7 @@ public class DoubleDigitTest {
     public void convertToText1() throws Exception {
         String expected = "Nineteen";
         String example = "19";
-        String actual = doubleDigit.convertDoubleDigit(example);
+        String actual = doubleDigit.conversionAction(example);
         assertEquals(expected, actual);
     }
 
@@ -43,7 +42,7 @@ public class DoubleDigitTest {
     public void convertToText2() throws Exception {
         String expected = "TwentyFour";
         String example = "24";
-        String actual = doubleDigit.convertDoubleDigit(example);
+        String actual = doubleDigit.conversionAction(example);
         assertEquals(expected, actual);
     }
 
@@ -51,7 +50,7 @@ public class DoubleDigitTest {
     public void convertToText3() throws Exception {
         String expected = "TwentyFour";
         String example = "24";
-        String actual = doubleDigit.convertDoubleDigit(example);
+        String actual = doubleDigit.conversionAction(example);
         assertEquals(expected, actual);
     }
 

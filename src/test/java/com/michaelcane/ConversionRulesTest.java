@@ -1,15 +1,12 @@
 package com.michaelcane;
 
+import com.michaelcane.ConversionRules;
+import com.michaelcane.NumbersAndTitles;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
+import static org.junit.Assert.assertEquals;
 
-import static org.junit.Assert.*;
-
-/**
- * Created by michaelcane on 6/11/16.
- */
 public class ConversionRulesTest {
 
     String example1 = "0";
@@ -29,7 +26,7 @@ public class ConversionRulesTest {
             }
 
             @Override
-            String convertToText(String input, ArrayList<String> map) {
+            String conversionAction(String input) {
                 return null;
             }
         };
@@ -47,20 +44,6 @@ public class ConversionRulesTest {
         int expected = 19;
         int actual = conversionRules.stringParser(example3);
         assertEquals("This method will parse the String into an int", expected, actual);
-    }
-
-    @Test
-    public void testConvertToText1() throws Exception {
-        String expected = "Nineteen";
-        String actual = conversionRules.convertToText(example3, numbersAndTitles.getBasicNumbers());
-        assertEquals("This will take 19 and covert it to Nineteen", expected, actual);
-    }
-
-    @Test
-    public void testConvertToText2() throws Exception {
-        String expected = "Three";
-        String actual = conversionRules.convertToText(example2, numbersAndTitles.getBasicNumbers());
-        assertEquals("This will take 19 and covert it to Nineteen", expected, actual);
     }
 
 }

@@ -6,17 +6,16 @@ public class OneDigit extends ConversionRules {
 
     NumbersAndTitles numbersAndTitles = new NumbersAndTitles();
 
-    @Override
-    boolean conditionToConvert(int input) {
+    public boolean conditionToConvert(int input) {
         return input == 1;
     }
 
-    @Override
-    String convertToText(String input, ArrayList<String> map) {
+    public String convertToText(String input, ArrayList<String> map) {
         return map.get(stringParser(input));
     }
 
-    public String convertOneDigit(String input) {
+    @Override
+    String conversionAction(String input) {
         return convertToText(input, numbersAndTitles.getBasicNumbers());
     }
 

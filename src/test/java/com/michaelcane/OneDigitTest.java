@@ -26,7 +26,7 @@ public class OneDigitTest {
     public void testConvertSingleDigit() {
         String expected = "Three";
         String example = "3";
-        String actual = oneDigit.convertOneDigit(example);
+        String actual = oneDigit.conversionAction(example);
         assertEquals(expected, actual);
     }
 

@@ -1,5 +1,7 @@
 package com.michaelcane;
 
+import com.michaelcane.NumbersAndTitles;
+
 import java.util.ArrayList;
 
 abstract class ConversionRules {
@@ -7,6 +9,8 @@ abstract class ConversionRules {
     NumbersAndTitles numbersAndTitles = new NumbersAndTitles();
 
     abstract boolean conditionToConvert(int input);
+
+    abstract String conversionAction(String input);
 
     public int stringParser(String input) {
         return Integer.parseInt(input);
@@ -19,6 +23,4 @@ abstract class ConversionRules {
     public ArrayList<String> chooseArrayList (String input) {
         return (findSubString(input).equals("1")) ? numbersAndTitles.getBasicNumbers() : numbersAndTitles.getLargeNumbers();
     }
-
-    abstract String convertToText(String input, ArrayList<String> map);
 }

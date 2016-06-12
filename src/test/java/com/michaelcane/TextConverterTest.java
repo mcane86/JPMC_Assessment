@@ -26,6 +26,14 @@ public class TextConverterTest {
     }
 
     @Test
+    public void getStringFromInput() throws Exception {
+        String expected = "OneHundredFifteen";
+        String example = "115";
+        String actual = textConverter.getStringFromInput(example);
+        assertEquals(expected, actual);
+    }
+
+    @Test
     public void textConversionEngine1() throws Exception {
         String expected = "FiveDollars";
         int example = 5;
@@ -75,8 +83,8 @@ public class TextConverterTest {
 
     @Test
     public void textConversionEngine7() throws Exception {
-        String expected = "NineHundredNineNinetyMillionNineHundredNineNinetyThousandNineHundredNineNinetyDollars";
-        int example = 1002371;
+        String expected = "NineHundredNinetyNineMillionNineHundredNinetyNineThousandNineHundredNinetyNineDollars";
+        int example = 999999999;
         String actual = textConverter.textConversionEngine(example);
         assertEquals(expected, actual);
     }
