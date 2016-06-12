@@ -36,7 +36,7 @@
     <SUITE FILE_PATH="coverage/JPMC_Interview_Assessment$NumberToTextConverterTest.coverage" NAME="NumberToTextConverterTest Coverage Results" MODIFIED="1465507116159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.michaelcane.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/JPMC_Interview_Assessment$com_michaelcane_in_JPMC_Interview_Assessment.coverage" NAME="com.michaelcane in JPMC_Interview_Assessment Coverage Results" MODIFIED="1465758058583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/JPMC_Interview_Assessment$com_michaelcane_in_JPMC_Interview_Assessment.coverage" NAME="com.michaelcane in JPMC_Interview_Assessment Coverage Results" MODIFIED="1465758207727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.michaelcane.*</FILTER>
     </SUITE>
   </component>
@@ -48,32 +48,7 @@
     <favorites_list name="JPMC_Interview_Assessment" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TextConverter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/michaelcane/TextConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#267#268#0" expanded="true" />
-                <element signature="e#302#303#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextConverterTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/michaelcane/TextConverterTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -855,7 +830,7 @@
       <updated>1465486157508</updated>
       <workItem from="1465486159249" duration="15346000" />
       <workItem from="1465563169898" duration="19000" />
-      <workItem from="1465596759095" duration="26829000" />
+      <workItem from="1465596759095" duration="26901000" />
     </task>
     <servers />
   </component>
@@ -872,9 +847,6 @@
     <history-entry file="TextConverterTest - 2016.06.12 at 15h 03m 23s.xml">
       <configuration name="TextConverterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TextConverterTest_textConversionEngine7 - 2016.06.12 at 14h 44m 14s.xml">
-      <configuration name="TextConverterTest.textConversionEngine7" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TripleDigitTest_testConvertToText - 2016.06.12 at 14h 47m 12s.xml">
       <configuration name="TripleDigitTest.testConvertToText" configurationId="JUnit" />
     </history-entry>
@@ -890,9 +862,12 @@
     <history-entry file="com_michaelcane_in_JPMC_Interview_Assessment - 2016.06.12 at 15h 00m 59s.xml">
       <configuration name="com.michaelcane in JPMC_Interview_Assessment" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="com_michaelcane_in_JPMC_Interview_Assessment - 2016.06.12 at 15h 03m 28s.xml">
+      <configuration name="com.michaelcane in JPMC_Interview_Assessment" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42194000" />
+    <option name="totallyTimeSpent" value="42266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-346" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -908,10 +883,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4049505" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32178217" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.53960395" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17625134" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17625134" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
